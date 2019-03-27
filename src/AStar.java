@@ -149,7 +149,7 @@ class AStar {
             n.puzzle[i] = node.puzzle[i].clone();
 
         // Copying all the rest of the scores
-        n.setG(n.getG());
+        n.setG(node.getG());
         n.setH(node.getH());
         n.setF(node.getF());
 
@@ -158,12 +158,14 @@ class AStar {
     }
 
     private Node find(Node n, List<Node> list) {
-        Node actual = null;
+        Node actual = null; // Make the node null for now
 
+        // Searching through the list if we fine the node, actual becomes that node
         for(Node node : list)
             if(Arrays.deepEquals(node.puzzle, n.puzzle))
                 actual = n;
 
+        // Return the actual node
         return actual;
     }
 
@@ -174,6 +176,8 @@ class AStar {
             return;
         }
 
+        /* Printing every puzzle in the path to the final one,
+        use recursion to continue to print until we reach the last one */
         printPuzzle(node);
         System.out.println(" |");
         System.out.println(" V");
