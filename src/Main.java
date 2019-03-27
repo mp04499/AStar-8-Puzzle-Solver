@@ -1,6 +1,7 @@
-import java.io.FileNotFoundException;
-import java.util.Scanner;
-import java.io.File;
+/**
+ * Michael Powell
+ * 8 Puzzle Solver with A* Algorithm
+ */
 
 public class Main {
 
@@ -8,16 +9,16 @@ public class Main {
 
         // Create starting node
         Node start = new Node(new int[][]{
-            {8, 0, 6},
-            {5, 4, 2},
-            {7, 3, 1}
+            {8, 7, 1},
+            {6, 0, 2},
+            {5, 4, 3}
         });
 
         // Create goal node
         Node goal = new Node(new int[][]{
-            {0, 1, 2},
-            {6, 7, 8},
-            {3, 4, 5}
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 0}
         });
 
         // Initialize AStar

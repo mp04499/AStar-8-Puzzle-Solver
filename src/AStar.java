@@ -1,3 +1,8 @@
+/**
+ * Michael Powell
+ * 8 Puzzle Solver with A* Algorithm
+ */
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

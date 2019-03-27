@@ -1,3 +1,8 @@
+/**
+ * Michael Powell
+ * 8 Puzzle Solver with A* Algorithm
+ */
+
 class Node {
 
 
